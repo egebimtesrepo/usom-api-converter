@@ -56,12 +56,12 @@ Palo Alto Networks üzerinde tehdit listelerini **External Dynamic Lists (EDL)**
 2. **IP Listesi Ekleme:**
    - **Name:** `USOM-IP-List`
    - **Type:** `IP List`
-   - **Source:** `https://raw.githubusercontent.com/beratcemzengin/USOM-API-Converter/main/usom_ip.txt`
+   - **Source:** `https://raw.githubusercontent.com/egebimtesrepo/USOM-API-Converter/main/usom_ip.txt`
    - **Repeat:** `Daily` (Günlük güncelleme saatini belirleyin)
 3. **Domain Listesi Ekleme:**
    - **Name:** `USOM-Domain-List`
    - **Type:** `Domain List`
-   - **Source:** `https://raw.githubusercontent.com/beratcemzengin/USOM-API-Converter/main/usom_domain.txt`
+   - **Source:** `https://raw.githubusercontent.com/egebimtesrepo/USOM-API-Converter/main/usom_domain.txt`
    - **Repeat:** `Daily`
 4. **Kural Tanımlama:** `Policies > Security` kısmında yeni bir kural oluşturun. **Destination** alanına `USOM-IP-List` nesnesini, **Service/URL Category** alanına `USOM-Domain-List` nesnesini ekleyin ve aksiyonu **Drop/Block** olarak set edin.
 
