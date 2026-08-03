@@ -14,9 +14,9 @@
 Kendi GitHub altyapınızı kurmak veya kod çalıştırmak istemiyorsanız, bu deponun GitHub Actions aracılığıyla **her gün otomatik olarak ürettiği** güncel ve tekilleştirilmiş listeleri doğrudan Firewall cihazlarınıza dinamik nesne olarak tanımlayabilirsiniz:
 
 * 🔗 **Güvenilir IP Listesi (L3/L4):**  
-  `https://raw.githubusercontent.com/beratcemzengin/USOM-API-Converter/main/usom_ip.txt`
+  `https://raw.githubusercontent.com/egebimtesrepo/USOM-API-Converter/main/usom_ip.txt`
 * 🔗 **Güvenilir Domain Listesi (L7):**  
-  `https://raw.githubusercontent.com/beratcemzengin/USOM-API-Converter/main/usom_domain.txt`
+  `https://raw.githubusercontent.com/egebimtesrepo/USOM-API-Converter/main/usom_domain.txt`
 
 ---
 
@@ -83,12 +83,12 @@ FortiGate cihazlarında bu listeleri **Security Fabric** altındaki **Fabric Con
 config system external-resource
     edit "USOM-IP-Feed"
         set category 1
-        set resource "https://raw.githubusercontent.com/beratcemzengin/USOM-API-Converter/main/usom_ip.txt"
+        set resource "https://raw.githubusercontent.com/egebimtesrepo/USOM-API-Converter/main/usom_ip.txt"
         set refresh 1440
     next
     edit "USOM-Domain-Feed"
         set category 3
-        set resource "https://raw.githubusercontent.com/beratcemzengin/USOM-API-Converter/main/usom_domain.txt"
+        set resource "https://raw.githubusercontent.com/egebimtesrepo/USOM-API-Converter/main/usom_domain.txt"
         set refresh 1440
     next
 end
